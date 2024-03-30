@@ -1,0 +1,51 @@
+@import "bootstrap";
+
+.navbar {
+    background-color: white !important;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.jumbotron {
+    background-image: url('unsplash-machine.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 425px;
+}
+
+#home-container {
+    margin-top: 25px;
+}
+
+/* Sticky Footer Classes */
+
+html, body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+}
+
+/* End of Sticky Footer Classes */
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, white);
+}
