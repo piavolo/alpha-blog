@@ -1,5 +1,10 @@
 @import "bootstrap";
 
+h1 {
+  font-weight: 600;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
 .navbar {
     background-color: white !important;
 }
@@ -46,6 +51,12 @@ html, body {
 /* End of Sticky Footer Classes */
 
 body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, white);
+  height: 100%;
+  background-color: #007bff; 
+  background-image: linear-gradient(to bottom right, #b340b3, #0062E6); 
+}
+
+.article-gradient {
+  height: 100%;
+  background-image: linear-gradient(to left, rgba(235, 117, 253, 0), #FFF);
 }
