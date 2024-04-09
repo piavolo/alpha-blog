@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-
     def new
     end
 
@@ -20,5 +19,5 @@ class SessionsController < ApplicationController
         flash[:notice] = "Logged out."
         redirect_to articles_path
     end
-    
+
 end
