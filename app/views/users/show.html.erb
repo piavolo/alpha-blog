@@ -7,4 +7,12 @@
 
 <h3 class="text-center mt-5 text-white">Articles</h3>
 
+<div class="custom_pagination">
+    <%= will_paginate @articles, :container => false %>
+</div>
+
 <%= render 'articles/article' %>
+
+<div class="custom_pagination mb-5">
+    <%= will_paginate @articles, :container => false %>
+</div>
