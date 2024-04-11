@@ -32,12 +32,12 @@
           <% else %>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Profile [<%= current_user.username %>]
+                <%= "(Admin)" if current_user.admin? %> Profile [<%= current_user.username %>]
               </a>
               <ul class="dropdown-menu">                
                 <li><%= link_to "View your profile", user_path(current_user), class: "dropdown-item" %></li>                
                 <li><%= link_to "Edit your profile", edit_user_path(current_user), class: "dropdown-item" %></li>
-                <li><%= link_to "Delete profile", user_path(current_user), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "dropdown-item text-danger" %></li>
+                <li><%= link_to "Delete profile", user_path(current_user), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to delete your profile?" }, class: "dropdown-item text-danger" %></li>
               </ul>
             </li>
             <li class="nav-item">
